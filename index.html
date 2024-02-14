@@ -9,6 +9,10 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -134,21 +138,24 @@
         <div class="row text-center">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 p-5">
 
-                <h1>50</h1>
+                <h1><span id="number">50</span> +</h1>
                 <p>Awards won</p>
 
 
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 p-5">
-                <h1>3900</h1>
+
+                <h1><span id="number1">3900</span> +</h1>
                 <p>Line of code</p>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 p-5">
-                <h1>50</h1>
+
+                <h1><span id="number2">50</span> +</h1>
                 <p>Clients worldwide</p>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 p-5">
-                <h1>86</h1>
+
+                <h1><span id="number3">86</span> +</h1>
                 <p>Project delivered</p>
             </div>
         </div>
@@ -247,24 +254,63 @@
         <h1>Our Blog</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quis necessitatibus velit asperiores.Lorem
             ipsum dolor sit amet, consectetur adipisicing elit. Rem quis necessitatibus velit asperiores.</p>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
-                <div class="card">
-                    <img src="assets/news-img01.jpg" alt="">
-                    <p class="card-body">Best Software new landing page</p>
+        <div class="owl-carousel owl-theme">
+            <!-- <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
+                    <div class="card item">
+                        <img src="assets/news-img01.jpg" alt="">
+                        <p class="card-body">Best Software new landing page</p>
+                    </div>
                 </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
+                    <div class="card item">
+                        <img src="assets/news-img02.jpg" alt="">
+                        <p class="card-body">Unique Software Best web page</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
+                    <div class="card item">
+                        <img src="assets/news-img03.jpg" alt="">
+                        <p class="card-body">Best Software new landing page</p>
+                    </div>
+                </div>
+
+            </div> -->
+            <div class="card item">
+                <img src="assets/news-img01.jpg" alt="">
+                <p class="card-body">Best Software new landing page</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
-                <div class="card">
-                    <img src="assets/news-img02.jpg" alt="">
-                    <p class="card-body">Unique Software Best web page</p>
-                </div>
+            <div class="card item">
+                <img src="assets/news-img02.jpg" alt="">
+                <p class="card-body">Unique Software Best web page</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-5">
-                <div class="card">
-                    <img src="assets/news-img03.jpg" alt="">
-                    <p class="card-body">Best Software new landing page</p>
-                </div>
+            <div class="card item">
+                <img src="assets/news-img03.jpg" alt="">
+                <p class="card-body">Best Software new landing page</p>
+            </div>
+            <div class="card item">
+                <img src="assets/news-img01.jpg" alt="">
+                <p class="card-body">Best Software new landing page</p>
+            </div>
+            <div class="card item">
+                <img src="assets/news-img02.jpg" alt="">
+                <p class="card-body">Unique Software Best web page</p>
+            </div>
+            <div class="card item">
+                <img src="assets/news-img03.jpg" alt="">
+                <p class="card-body">Best Software new landing page</p>
+            </div>
+            <div class="card item">
+                <img src="assets/news-img01.jpg" alt="">
+                <p class="card-body">Best Software new landing page</p>
+            </div>
+            <div class="card item">
+                <img src="assets/news-img02.jpg" alt="">
+                <p class="card-body">Unique Software Best web page</p>
+            </div>
+            <div class="card item">
+                <img src="assets/news-img03.jpg" alt="">
+                <p class="card-body">Best Software new landing page</p>
             </div>
         </div>
     </section>
@@ -321,12 +367,17 @@
     <!-- ---------------------------------------------Free trial start--------------------------- ---->
     <section class="container-fluid trial text-center p-5" id="contact">
         <h1>Start your free trial</h1>
-        <p class="mb-5 mt-5 p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quis necessitatibus velit asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quis necessitatibus velit asperiores.</p>
+        <p class="mb-5 mt-5 p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quis necessitatibus velit
+            asperiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quis necessitatibus velit
+            asperiores.</p>
         <form action="practice.html" class="col-6 text-center" onsubmit="return contactvalid()">
-            <input type="text" class="form-control " id="name"  placeholder="Your name" ><p id="n-note"></p>
-        
-            <input type="text" class="form-control " id="mail"  placeholder="Your mail"><p id="m-note"></p>
-            <input type="text" class="form-control" id="phone"  placeholder="Your Phone"><p id="p-note"></p>
+            <input type="text" class="form-control " id="name" placeholder="Your name">
+            <p id="n-note"></p>
+
+            <input type="text" class="form-control " id="mail" placeholder="Your mail">
+            <p id="m-note"></p>
+            <input type="text" class="form-control" id="phone" placeholder="Your Phone">
+            <p id="p-note"></p>
             <textarea name="" id="message" cols="30" class="form-control mb-3" rows="4">Message</textarea>
             <input class="btn" type="submit">
         </form>
@@ -339,7 +390,8 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 collg-3 col-xl-3">
                 <h1>Alltech</h1>
-                <p>Morbi accumsan ipsum velit Nam neck tellus a odio tincidunt auctor a ornare dolor sit amet odio roin.</p>
+                <p>Morbi accumsan ipsum velit Nam neck tellus a odio tincidunt auctor a ornare dolor sit amet odio roin.
+                </p>
             </div>
             <div class="col-12 col-sm-12 col-md-6 collg-3 col-xl-3">
                 <h3>Address</h3>
@@ -359,8 +411,37 @@
         </div>
     </section>
     <!-- -------------------------------------------------footer end----------------------------- ---->
-    
+
     <script src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="res/countMe/countMe.min.js"></script>
+    <script>
+        $("#number").countMe(0, 100);
+        $("#number1").countMe(0, -10000);
+        $("#number2").countMe(0, 100);
+        $("#number3").countMe(0, 100);
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true,
+            
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
