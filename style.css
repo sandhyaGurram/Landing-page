@@ -48,7 +48,7 @@
 }
 .feature  i{
     background-color: rgba(26, 12, 107, 0.95);
-    padding: 50px;
+    padding: 25px;
     border-radius: 50%;
     color: white;
     font-size: 50px;
@@ -123,8 +123,9 @@
 }
 .blog{
     background-color: rgb(239, 238, 249);
-    padding: 50px 150px;
+    padding: 50px 10px;
 }
+
 .blog h1{
     color: rgb(5, 62, 154);
 }
@@ -170,13 +171,14 @@ sup{
     color: rgb(247, 80, 9);
 }
 .contact{
-    width: 500px;
+    
     margin: auto;
 }
 form{
-    padding: 50px;
+    padding: 50px 10px;
     box-shadow: 5px 5px 10px rgba(26, 12, 107, 0.95), -5px -5px 10px rgba(26, 12, 107, 0.95);
     border-radius: 15px;
+    margin: auto;
 }
 form p{
     width: 100%;
